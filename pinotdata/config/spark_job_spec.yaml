@@ -1,0 +1,25 @@
+executionFrameworkSpec:
+  name: "spark"
+  segmentGenerationJobRunnerClassName: "org.apache.pinot.plugin.ingestion.batch.spark.SparkSegmentGenerationJobRunner"
+  segmentTarPushJobRunnerClassName: "org.apache.pinot.plugin.ingestion.batch.spark.SparkSegmentTarPushJobRunner"
+  segmentUriPushJobRunnerClassName: "org.apache.pinot.plugin.ingestion.batch.spark.SparkSegmentUriPushJobRunner"
+extraConfigs:
+  stagingDir: s3://staging/
+jobType: SegmentCreationAndTarPush
+inputDirURI: "s3://curated/"
+outputDirURI: "s3:///batch-output/"
+overwriteOutput: true
+pinotFSSpecs:
+  - scheme: s3
+    className: org.apache.pinot.plugin.filesystem.S3PinotFS
+recordReaderSpec:
+  dataFormat: "parquet"
+  className: "org.apache.pinot.plugin.inputformat.parquet.ParquetRecordReader"
+tableSpec:
+  tableName: "students"
+pinotClusterSpecs:
+  - controllerURI: "http://localhost:9000"
+pushJobSpec:
+  pushParallelism: 2
+  pushAttempts: 2
+  pushRetryIntervalMillis: 1000

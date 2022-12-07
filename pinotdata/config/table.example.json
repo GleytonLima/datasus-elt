@@ -1,0 +1,52 @@
+{
+  "tableName": "events",
+  "tableType": "OFFLINE",
+  "segmentsConfig": {
+    "timeColumnName": "ts",
+    "timeType": "MILLISECONDS",
+    "replication": "1",
+    "schemaName": "events"
+  },
+  "tableIndexConfig": {
+    "invertedIndexColumns": [],
+    "loadMode": "MMAP"
+  },
+  "tenants": {},
+  "metadata": {},
+  "ingestionConfig": {
+    "batchIngestionConfig": {
+      "segmentIngestionType": "APPEND",
+      "segmentIngestionFrequency": "DAILY",
+      "batchConfigMaps": [
+        {
+          "input.fs.className": "org.apache.pinot.plugin.filesystem.S3PinotFS",
+          "input.fs.prop.region": "eu-west-1",
+          "input.fs.prop.accessKey": "obter_no_minio",
+          "input.fs.prop.secretKey": "obter_no_minio",
+          "input.fs.prop.endpoint": "http://host.docker.internal:9100",
+          "inputDirURI": "s3://curated/",
+          "inputFormat": "parquet"
+        }
+      ]
+    }
+  },
+  "task": {
+    "taskTypeConfigsMap": {
+      "SegmentGenerationAndPushTask": {
+        "schedule": "0 */1 * * * ?",
+        "tableMaxNumTasks": 10
+      }
+    }
+  },
+  "query": {
+    "timeoutMs": null
+  },
+  "quota": {
+    "storage": null,
+    "maxQueriesPerSecond": null
+  },
+  "routing": {
+    "segmentPrunerTypes": null,
+    "instanceSelectorType": null
+  }
+}

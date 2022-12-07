@@ -1,0 +1,6 @@
+apache-airflow
+astro-sdk-python
+pyspark
+minio
+pandas
+python-dotenv

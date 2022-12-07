@@ -104,4 +104,4 @@ docker-compose -f docker-compose-spark.yml --project-name datasus-spark up
     -d @pinotdata/config/table.json
    ```
 
-7. Acompanhar em <http://localhost:9000> que o arquivo é gerado.
+7. Acompanhar em <http://localhost:9000> que o arquivo é populado no Apache Pinot
