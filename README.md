@@ -105,3 +105,23 @@ docker-compose -f docker-compose-spark.yml --project-name datasus-spark up
    ```
 
 7. Acompanhar em <http://localhost:9000> que o arquivo é populado no Apache Pinot
+
+## Apache Superset
+
+Tutorial para instalar drivers <https://superset.apache.org/docs/databases/docker-add-drivers>
+
+```sh
+# From the repo root...
+touch ./docker/requirements-local.txt
+```
+
+```sh
+echo "pinotdb" >> ./docker/requirements-local.txt
+```
+
+Adicionando pinot:
+
+<https://superset.apache.org/docs/databases/pinot>
+
+Exemplo:
+<pinot+http://host.docker.internal:8099/query?controller=http://host.docker.internal:9000/>

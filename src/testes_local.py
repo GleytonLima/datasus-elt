@@ -1,9 +1,11 @@
-import os
 import io
-from minio import Minio
-from minio.error import S3Error
+import os
+
 import pandas as pd
 from dotenv import load_dotenv
+from minio import Minio
+from pysus.online_data.CNES import download
+from pysus.online_data.sinasc import download as download_sinasc
 
 load_dotenv()
 
@@ -46,8 +48,12 @@ def csv_to_parquet():
     )
 
 
+def download_cnes():
+    df = download_sinasc('SE', 2015)
+    print("OK: " + df.head())
+    df = download(group="ST", state="DF", year=2022, month=1, cache=True)
+    print(df)
+
+
 if __name__ == "__main__":
-    try:
-        csv_to_parquet()
-    except S3Error as exc:
-        print("error occurred.", exc)
+    download_cnes()

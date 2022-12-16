@@ -4,3 +4,4 @@ pyspark
 minio
 pandas
 python-dotenv
+PySUS
