@@ -42,7 +42,7 @@ Exemplo extraído de <https://github.com/startreedata/pinot-recipes/tree/main/re
 Acesse <http://localhost:9101> com as credenciais padrão minioadmin, minioadmin
 
 ```bash
-docker-compose -f docker-compose-minio.yml -p datasus-minio up
+compose -f docker-compose-minio.yml -p datasus-minio updocker-
 ```
 
 ## Apache Pinot
@@ -86,6 +86,20 @@ docker-compose -f docker-compose-spark.yml --project-name datasus-spark up
    -d @pinotdata/config/schema.json
    ```
 
+   ```sh
+   curl -X POST "http://localhost:9000/schemas" \
+   -H "accept: application/json" \
+   -H "Content-Type: application/json" \
+   -d @pinotdata/config/schema-cnes.json
+   ```
+
+   ```sh
+   curl -X POST "http://localhost:9000/schemas" \
+   -H "accept: application/json" \
+   -H "Content-Type: application/json" \
+   -d @pinotdata/config/schema-sia-pa.json
+   ```
+
 6. Criar a tabela de exemplo:
 
    ```sh
@@ -93,6 +107,20 @@ docker-compose -f docker-compose-spark.yml --project-name datasus-spark up
    -H "accept: application/json" \
    -H "Content-Type: application/json" \
    -d @pinotdata/config/table.json
+   ```
+
+   ```sh
+   curl -X POST "http://localhost:9000/tables" \
+   -H "accept: application/json" \
+   -H "Content-Type: application/json" \
+   -d @pinotdata/config/table-cnes.json
+   ```
+
+   ```sh
+   curl -X POST "http://localhost:9000/tables" \
+   -H "accept: application/json" \
+   -H "Content-Type: application/json" \
+   -d @pinotdata/config/table-sia-pa.json
    ```
 
    5.1. Se necessário atualizar a tabela:
@@ -125,3 +153,5 @@ Adicionando pinot:
 
 Exemplo:
 <pinot+http://host.docker.internal:8099/query?controller=http://host.docker.internal:9000/>
+
+https://datasus.saude.gov.br/transferencia-de-arquivos/#

@@ -1,0 +1,291 @@
+{
+  "schemaName": "sia_pa",
+  "dimensionFieldSpecs": [
+    {
+      "name": "PA_CODUNI",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_GESTAO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CONDIC",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_UFMUN",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_REGCT",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_INCOUT",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_INCURG",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_TPUPS",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_TIPPRE",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_MN_IND",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CNPJCPF",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CNPJMNT",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CNPJ_CC",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_MVM",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CMP",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_PROC_ID",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_TPFIN",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_SUBFIN",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_NIVCPL",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_DOCORIG",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_AUTORIZ",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CNSMED",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CBOCOD",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_MOTSAI",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_OBITO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_ENCERR",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_PERMAN",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_ALTA",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_TRANSF",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CIDPRI",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CIDSEC",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CIDCAS",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CATEND",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_IDADE",
+      "dataType": "STRING"
+    },
+    {
+      "name": "IDADEMIN",
+      "dataType": "STRING"
+    },
+    {
+      "name": "IDADEMAX",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_FLIDADE",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_SEXO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_RACACOR",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_MUNPCN",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_QTDPRO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_QTDAPR",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_VALPRO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_VALAPR",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_UFDIF",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_MNDIF",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_DIF_VAL",
+      "dataType": "STRING"
+    },
+    {
+      "name": "NU_VPA_TOT",
+      "dataType": "STRING"
+    },
+    {
+      "name": "NU_PA_TOT",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_INDICA",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_CODOCO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_FLQT",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_FLER",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_ETNIA",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_VL_CF",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_VL_CL",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_VL_INC",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_SRV_C",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_INE",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PA_NAT_JUR",
+      "dataType": "STRING"
+    },
+    {
+      "name": "nome_proced",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ocupacao",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResStatus",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResTipo",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResNome",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResUf",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResLat",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResLon",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResAlt",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResArea",
+      "dataType": "STRING"
+    },
+    {
+      "name": "equipe_ref",
+      "dataType": "STRING"
+    }
+  ],
+  "metricFieldSpecs": [],
+  "dateTimeFieldSpecs": []
+}

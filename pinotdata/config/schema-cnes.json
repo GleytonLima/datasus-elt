@@ -1,0 +1,879 @@
+{
+  "schemaName": "cnes_st",
+  "dimensionFieldSpecs": [
+    {
+      "name": "CNES",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CODUFMUN",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COD_CEP",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CPF_CNPJ",
+      "dataType": "STRING"
+    },
+    {
+      "name": "PF_PJ",
+      "dataType": "STRING"
+    },
+    {
+      "name": "NIV_DEP",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CNPJ_MAN",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COD_IR",
+      "dataType": "STRING"
+    },
+    {
+      "name": "REGSAUDE",
+      "dataType": "STRING"
+    },
+    {
+      "name": "MICR_REG",
+      "dataType": "STRING"
+    },
+    {
+      "name": "DISTRSAN",
+      "dataType": "STRING"
+    },
+    {
+      "name": "DISTRADM",
+      "dataType": "STRING"
+    },
+    {
+      "name": "VINC_SUS",
+      "dataType": "STRING"
+    },
+    {
+      "name": "TPGESTAO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ESFERA_A",
+      "dataType": "STRING"
+    },
+    {
+      "name": "RETENCAO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ATIVIDAD",
+      "dataType": "STRING"
+    },
+    {
+      "name": "NATUREZA",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CLIENTEL",
+      "dataType": "STRING"
+    },
+    {
+      "name": "TP_UNID",
+      "dataType": "STRING"
+    },
+    {
+      "name": "TURNO_AT",
+      "dataType": "STRING"
+    },
+    {
+      "name": "NIV_HIER",
+      "dataType": "STRING"
+    },
+    {
+      "name": "TP_PREST",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CO_BANCO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CO_AGENC",
+      "dataType": "STRING"
+    },
+    {
+      "name": "C_CORREN",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CONTRATM",
+      "dataType": "STRING"
+    },
+    {
+      "name": "DT_PUBLM",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CONTRATE",
+      "dataType": "STRING"
+    },
+    {
+      "name": "DT_PUBLE",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ALVARA",
+      "dataType": "STRING"
+    },
+    {
+      "name": "DT_EXPED",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ORGEXPED",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AV_ACRED",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CLASAVAL",
+      "dataType": "STRING"
+    },
+    {
+      "name": "DT_ACRED",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AV_PNASS",
+      "dataType": "STRING"
+    },
+    {
+      "name": "DT_PNASS",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG1E",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG1M",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG2E",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG2M",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG4E",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG4M",
+      "dataType": "STRING"
+    },
+    {
+      "name": "NIVATE_A",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG3E",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG3M",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG5E",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG5M",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG6E",
+      "dataType": "STRING"
+    },
+    {
+      "name": "GESPRG6M",
+      "dataType": "STRING"
+    },
+    {
+      "name": "NIVATE_H",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEITP1",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEITP2",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEITP3",
+      "dataType": "STRING"
+    },
+    {
+      "name": "LEITHOSP",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST01",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST02",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST03",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST04",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST05",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST06",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST07",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST08",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST09",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST10",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST11",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST12",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST13",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST14",
+      "dataType": "STRING"
+    },
+    {
+      "name": "URGEMERG",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST15",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST16",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST17",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST18",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST19",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST20",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST21",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST22",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST23",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST24",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST25",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST26",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST27",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST28",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST29",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST30",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ATENDAMB",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST31",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST32",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST33",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CENTRCIR",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST34",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST35",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST36",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTINST37",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CENTROBS",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT05",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT06",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT07",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT08",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT09",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT19",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT20",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT21",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT22",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT23",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT32",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT34",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT38",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT39",
+      "dataType": "STRING"
+    },
+    {
+      "name": "QTLEIT40",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CENTRNEO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ATENDHOS",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP01P",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP01T",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP02P",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP02T",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP03P",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP03T",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP04P",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP04T",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP05P",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP05T",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP06P",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP06T",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP07P",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP07T",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP08P",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP08T",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP09P",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP09T",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP10P",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP10T",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP11P",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAP11T",
+      "dataType": "STRING"
+    },
+    {
+      "name": "SERAPOIO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "RES_BIOL",
+      "dataType": "STRING"
+    },
+    {
+      "name": "RES_QUIM",
+      "dataType": "STRING"
+    },
+    {
+      "name": "RES_RADI",
+      "dataType": "STRING"
+    },
+    {
+      "name": "RES_COMU",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COLETRES",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS01",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS02",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS03",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS04",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS05",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS06",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS07",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS08",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS09",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS10",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS11",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISS12",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMISSAO",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP01CV01",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP01CV02",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP01CV05",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP01CV06",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP01CV03",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP01CV04",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP02CV01",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP02CV02",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP02CV05",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP02CV06",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP02CV03",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP02CV04",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP03CV01",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP03CV02",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP03CV05",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP03CV06",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP03CV03",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP03CV04",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP04CV01",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP04CV02",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP04CV05",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP04CV06",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP04CV03",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP04CV04",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP05CV01",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP05CV02",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP05CV05",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP05CV06",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP05CV03",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP05CV04",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP06CV01",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP06CV02",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP06CV05",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP06CV06",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP06CV03",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP06CV04",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP07CV01",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP07CV02",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP07CV05",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP07CV06",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP07CV03",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP07CV04",
+      "dataType": "STRING"
+    },
+    {
+      "name": "ATEND_PR",
+      "dataType": "STRING"
+    },
+    {
+      "name": "DT_ATUAL",
+      "dataType": "STRING"
+    },
+    {
+      "name": "COMPETEN",
+      "dataType": "STRING"
+    },
+    {
+      "name": "NAT_JUR",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP01CV07",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP02CV07",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP03CV07",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP04CV07",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP05CV07",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP06CV07",
+      "dataType": "STRING"
+    },
+    {
+      "name": "AP07CV07",
+      "dataType": "STRING"
+    },
+    {
+      "name": "CNES_integer",
+      "dataType": "STRING"
+    },
+    {
+      "name": "FANTASIA",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResStatus",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResTipo",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResNome",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResUf",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResLat",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResLon",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResAlt",
+      "dataType": "STRING"
+    },
+    {
+      "name": "munResArea",
+      "dataType": "STRING"
+    }
+  ],
+  "metricFieldSpecs": [],
+  "dateTimeFieldSpecs": []
+}

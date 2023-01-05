@@ -51,8 +51,14 @@ def csv_to_parquet():
 def download_cnes():
     df = download_sinasc('SE', 2015)
     print("OK: " + df.head())
-    df = download(group="ST", state="DF", year=2022, month=1, cache=True)
-    print(df)
+    df = download(group="ST", state="DF", year=2021, month=1, cache=True)
+    print("OOOOK")
+    print("GO" + df.head())
+
+
+def cnes_download():
+    print("!")
+
 
 
 if __name__ == "__main__":
