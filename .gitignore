@@ -402,5 +402,6 @@ cython_debug/
 ./teste.txt
 pinotdata/config/table.json
 pinotdata/config/table-cnes.json
+pinotdata/config/table-cnes-auxiliar.json
 pinotdata/config/table-sia-pa.json
 *.env

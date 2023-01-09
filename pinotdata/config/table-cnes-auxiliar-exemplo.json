@@ -1,0 +1,56 @@
+{
+  "tableName": "cnes_st_auxiliar",
+  "tableType": "OFFLINE",
+  "segmentsConfig": {
+    "replication": "1",
+    "segmentPushType": "REFRESH",
+    "schemaName": "cnes_st_auxiliar"
+  },
+  "tableIndexConfig": {
+    "invertedIndexColumns": [],
+    "loadMode": "MMAP"
+  },
+  "tenants": {},
+  "metadata": {
+    "customConfigs": {
+    }
+  },
+  "ingestionConfig": {
+    "batchIngestionConfig": {
+      "segmentIngestionType": "REFRESH",
+      "segmentIngestionFrequency": "DAILY",
+      "batchConfigMaps": [
+        {
+          "input.fs.className": "org.apache.pinot.plugin.filesystem.S3PinotFS",
+          "input.fs.prop.region": "eu-west-1",
+          "input.fs.prop.accessKey": "key",
+          "input.fs.prop.secretKey": "secret",
+          "input.fs.prop.endpoint": "http://host.docker.internal:9100",
+          "inputDirURI": "s3://curated/",
+          "inputFormat": "parquet",
+          "includeFileNamePattern": "glob:**/*cnes-auxiliar.parquet"
+        }
+      ]
+    }
+  },
+  "task": {
+    "taskTypeConfigsMap": {
+      "SegmentGenerationAndPushTask": {
+        "schedule": "0 */1 * * * ?",
+        "tableMaxNumTasks": 10
+      }
+    }
+  },
+  "query": {
+    "timeoutMs": null
+  },
+  "quota": {
+    "storage": null,
+    "maxQueriesPerSecond": null
+  },
+  "routing": {
+    "segmentPrunerTypes": null,
+    "instanceSelectorType": null
+  },
+  "isDimTable": true
+}

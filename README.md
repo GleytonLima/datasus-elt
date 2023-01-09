@@ -100,6 +100,13 @@ docker-compose -f docker-compose-spark.yml --project-name datasus-spark up
    -d @pinotdata/config/schema-sia-pa.json
    ```
 
+   ```sh
+   curl -X POST "http://localhost:9000/schemas" \
+   -H "accept: application/json" \
+   -H "Content-Type: application/json" \
+   -d @pinotdata/config/schema-cnes-auxiliar.json
+   ```
+
 6. Criar a tabela de exemplo:
 
    ```sh
@@ -122,17 +129,35 @@ docker-compose -f docker-compose-spark.yml --project-name datasus-spark up
    -H "Content-Type: application/json" \
    -d @pinotdata/config/table-sia-pa.json
    ```
+   
+   ```sh
+   curl -X POST "http://localhost:9000/tables" \
+   -H "accept: application/json" \
+   -H "Content-Type: application/json" \
+   -d @pinotdata/config/table-cnes-auxiliar.json
+   ```
 
    5.1. Se necessário atualizar a tabela:
 
    ```sh
-   curl -X PUT "http://localhost:9000/tables/events" \
+   curl -X PUT "http://localhost:9000/tables/cnes_st" \
     -H "accept: application/json" \
     -H "Content-Type: application/json" \
-    -d @pinotdata/config/table.json
+    -d @pinotdata/config/table-cnes.json
    ```
 
 7. Acompanhar em <http://localhost:9000> que o arquivo é populado no Apache Pinot
+
+### Tabelas de Dimensão
+
+Tabelas de Dimensão oferecem suporte a join para enriquecer dados. O arquivo [table-cnes-auxiliar-exemplo.json](pinotdata/config/table-cnes-auxiliar-exemplo.json) 
+demonstra um exemplo. A [documentação](https://docs.pinot.apache.org/basics/data-import/batch-ingestion/dim-table) tem mais detalhes.
+
+```sql
+select sia_pa.*, lookup('cnes_st_auxiliar','FANTASIA','CNES', PA_CODUNI) as name from sia_pa limit 10
+```
+
+Um exemplo de dados para compor uma tabela de dados auxiliares pode ser visto no [projeto microdatasus](https://github.com/rfsaldanha/microdatasus/blob/32d2fd96f63a9d74a6294b2a5a9a387567b9ce04/data-raw/cadger.R).
 
 ## Apache Superset
 

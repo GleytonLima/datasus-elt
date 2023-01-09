@@ -1,0 +1,16 @@
+{
+  "schemaName": "cnes_st_auxiliar",
+  "dimensionFieldSpecs": [
+    {
+      "name": "CNES",
+      "dataType": "STRING"
+    },
+    {
+      "name": "FANTASIA",
+      "dataType": "STRING"
+    }
+  ],
+  "metricFieldSpecs": [],
+  "dateTimeFieldSpecs": [],
+  "primaryKeyColumns": ["CNES"]
+}
